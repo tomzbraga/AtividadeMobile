@@ -1,9 +1,10 @@
 import { buttonText } from "../labels";
 import { Pressable, Text, StyleSheet } from "react-native";
 
-export default function Button() {
+export default function Button({ onPress }) {
   return (
     <Pressable
+      onPress={onPress}
       style={({ pressed }) => [styles.button, pressed && styles.buttonPressed]}
     >
       {({ pressed }) => (

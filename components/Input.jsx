@@ -1,6 +1,25 @@
-import { TextInput } from "react-native";
+import { TextInput, StyleSheet } from "react-native";
 import { placeholder } from "../labels";
 
-export default function Input() {
-  return <TextInput placeholder={placeholder}></TextInput>;
+export default function Input({ value, onChangeText }) {
+  return (
+    <TextInput
+      style={styles.input}
+      placeholder={placeholder}
+      placeholderTextColor="#A0A0A5"
+      value={value}
+      onChangeText={onChangeText}
+    />
+  );
 }
+
+const styles = StyleSheet.create({
+  input: {
+    height: 48,
+    backgroundColor: "#fff",
+    borderRadius: 12,
+    paddingHorizontal: 16,
+    fontSize: 16,
+    color: "#1C1C1E",
+  },
+});
