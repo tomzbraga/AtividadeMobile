@@ -18,15 +18,15 @@ export default function Button({ onPress }) {
 
 const styles = StyleSheet.create({
   button: {
-    backgroundColor: "#1e40af",
+    backgroundColor: "#4338CA",
     paddingVertical: 12,
     paddingHorizontal: 24,
-    borderRadius: 8,
+    borderRadius: 12,
     alignItems: "center",
     justifyContent: "center",
   },
   buttonPressed: {
-    backgroundColor: "#1e3a8a",
+    backgroundColor: "#3730A3",
     opacity: 0.9,
   },
   text: {
