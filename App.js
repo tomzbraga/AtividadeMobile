@@ -1,10 +1,9 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
-import { title, placeholder, buttonText, listTitle } from "./labels";
+import { title } from "./labels";
 import Header from "./components/Header";
-import Input from "./components/Input";
-import Button from "./components/Button";
+import Main from "./components/Main";
 
 export default function App() {
   return (
@@ -12,8 +11,7 @@ export default function App() {
       <SafeAreaView style={styles.container}>
         <View>
           <Header />
-          <Input />
-          <Button />
+          <Main />
         </View>
       </SafeAreaView>
     </SafeAreaProvider>
